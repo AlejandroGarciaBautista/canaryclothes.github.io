@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="./css/styles.css" type="text/css" rel="stylesheet">
+  <title>Pantalones</title>
+  <link rel="icon" type="image/x-icon" href="../img/Logo.png">
+</head>
+<body>
+  
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="./index.html">
+        <span class="text-uppercase fw-lighter ms-2">CanaryClothes</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Botón para expandir el menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="./index.html">Página Principal</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="./info.html">Información</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="./login.html">Login</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="./carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Final de la Barra de Navegación -->
+
+    <!-- Cabecera -->
+    <header class="bg-dark py-5" id="header">
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Los Pantalones que siempre has querido en la puerta de casa</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Pantalones Deportivos</p>
+        </div>
+      </div>
+    </header>
+    <!-- Final Cabecera -->
+
+  <!-- Pagina Principal -->
+  <main>
+    <div data-bs-spy="scroll" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2">
+      
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Página Principal</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pantalones</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col text-center my-4">
+          <h2 class="fs-2"> Pantalones Deportivos </h2>
+        </div>
+      </div>
+  
+      <div class="row mt-3 mb-4 button-group filter-button-group">
+        <div class="col d-flex justify-content-center">
+          <p tabindex="0" class="texto-filtro"> Filtros: </p>
+          <button type="button" data-filter="*" class="btn btn-primary mx-1 text-dark" tabindex="0" aria-label="No aplicar filtro a los pantalones">Todos</button>
+          <button type="button" data-filter=".hombre" class="btn btn-primary mx-1 text-dark" tabindex="0" aria-label="Aplicar filtro hombre a los pantalones">Hombre</button>
+          <button type="button" data-filter=".mujer" class="btn btn-primary mx-1 text-dark" tabindex="0" aria-label="Aplicar filtro mujer a los pantalones">Mujer</button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center g-4 contenido-productos" id="todos-productos">
+        <!-- Stock Pantalones -->
+        <div class="card hombre" style="width: 18rem;">
+          <img src="../img/Pantalon corto azul.jpg" class="card-img-top" alt="Pantalón deportivo de hombre de color azul" tabindex="0">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón corto de hombre</h3>
+            <p class="card-text" tabindex="0">Pantalón corto deportivo azul, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+            <p class="card-text precios"  tabindex="0"><strong>50€</strong></p>
+            <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+          </div>
+        </div>
+
+        <div class="card mujer" style="width: 18rem;">
+          <img src="../img/pantalon gris.jpg" class="card-img-top pantalon-mujer" alt="Pantalón deportivo de mujer de color gris" tabindex="0">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón de mujer</h3>
+            <p class="card-text" tabindex="0">Pantalón malla deportivo gris, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+            <p class="card-text precios"  tabindex="0"><strong>35€</strong></p>
+            <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+          </div>
+        </div>
+
+        <div class="card hombre" style="width: 18rem;">
+          <img src="../img/pantalon corto rojoo.jpg" class="card-img-top" alt="Pantalón deportivo de hombre de color rojo" tabindex="0">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón corto de hombre</h3>
+            <p class="card-text" tabindex="0">Pantalón corto deportivo rojo, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+            <p class="card-text precios"  tabindex="0"><strong>30€</strong></p>
+            <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+          </div>
+        </div>
+
+        <div class="card mujer" style="width: 18rem;">
+          <img src="../img/pantalon negro_.jpg" class="card-img-top pantalon-mujer" alt="Pantalón deportivo de mujer de color negro y rayas grises" tabindex="0">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón de mujer</h3>
+            <p class="card-text" tabindex="0">Pantalón malla deportivo negro con rayas grises, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+            <p class="card-text precios"  tabindex="0"><strong>35€</strong></p>
+            <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+          </div>
+        </div>
+
+        <div class="card hombre" style="width: 18rem;">
+          <img src="../img/pantalon corto verdee.jpg" class="card-img-top" alt="Pantalón deportivo de hombre de color verde" tabindex="0">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón corto de hombre</h3>
+            <p class="card-text" tabindex="0">Pantalón corto deportivo verde, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+            <p class="card-text precios"  tabindex="0"><strong>30€</strong></p>
+            <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+          </div>
+        </div>
+
+        <div class="card mujer" style="width: 18rem;">
+          <img src="../img/pantalon rosado.jpg" class="card-img-top pantalon-mujer" alt="Pantalón deportivo de mujer de color negro y rayas rosadas" tabindex="0">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón de mujer</h3>
+            <p class="card-text" tabindex="0">Pantalón malla deportivo negro con rayas rosadas, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+            <p class="card-text precios"  tabindex="0"><strong>35€</strong></p>
+            <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+          </div>
+        </div>
+
+        <div class="card hombre" style="width: 18rem;">
+            <img src="../img/pantalon corto blanco.jpg" class="card-img-top" alt="Pantalón deportivo de hombre de color blanco" tabindex="0">
+            <div class="card-body">
+              <h3 class="card-title">Pantalón corto de hombre</h3>
+              <p class="card-text" tabindex="0">Pantalón corto deportivo blanco, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+              <p class="card-text precios"  tabindex="0"><strong>30€</strong></p>
+              <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+            </div>
+          </div>
+  
+          <div class="card mujer" style="width: 18rem;">
+            <img src="../img/Pantalon mujer gris oscuro rayas rojas.jpg" class="card-img-top pantalon-mujer" alt="Pantalón deportivo de mujer de color gris oscuro y rayas rojas" tabindex="0">
+            <div class="card-body">
+              <h3 class="card-title">Pantalón de mujer</h3>
+              <p class="card-text" tabindex="0">Pantalón malla deportivo gris oscuro y con rayas rojas, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+              <p class="card-text precios"  tabindex="0"><strong>35€</strong></p>
+              <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+            </div>
+          </div>
+  
+          <div class="card hombre" style="width: 18rem;">
+            <img src="../img/Pantalon corto gris oscuro.jpg" class="card-img-top" alt="Pantalón deportivo de hombre de color gris oscuro" tabindex="0">
+            <div class="card-body">
+              <h3 class="card-title">Pantalón corto de hombre</h3>
+              <p class="card-text" tabindex="0">Pantalón corto deportivo gris oscuro, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+              <p class="card-text precios"  tabindex="0"><strong>30€</strong></p>
+              <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+            </div>
+          </div>
+  
+          <div class="card mujer" style="width: 18rem;">
+            <img src="../img/Pantalon mujer gris rayas negras.jpg" class="card-img-top pantalon-mujer" alt="Pantalón deportivo de mujer de color gris y rayas negras" tabindex="0">
+            <div class="card-body">
+              <h3 class="card-title">Pantalón de mujer</h3>
+              <p class="card-text" tabindex="0">Pantalón malla deportivo gris con rayas negras, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+              <p class="card-text precios"  tabindex="0"><strong>35€</strong></p>
+              <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+            </div>
+          </div>
+  
+          <div class="card hombre" style="width: 18rem;">
+            <img src="../img/Pantalon corto gris oscuro.jpg" class="card-img-top" alt="Pantalón deportivo de hombre de color gris oscuro" tabindex="0">
+            <div class="card-body">
+              <h3 class="card-title">Pantalón corto de hombre</h3>
+              <p class="card-text" tabindex="0">Pantalón corto deportivo gris oscuro, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+              <p class="card-text precios"  tabindex="0"><strong>30€</strong></p>
+              <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+            </div>
+          </div>
+  
+          <div class="card mujer" style="width: 18rem;">
+            <img src="../img/Pantalon mujer negro claro.jpg" class="card-img-top pantalon-mujer" alt="Pantalón deportivo de mujer de color negro claro" tabindex="0">
+            <div class="card-body">
+              <h3 class="card-title">Pantalón de mujer</h3>
+              <p class="card-text" tabindex="0">Pantalón malla deportivo negro claro, disponible en varias tallas, material de buena calidad, cómodo y resistente</p>
+              <p class="card-text precios"  tabindex="0"><strong>35€</strong></p>
+              <button type="button" class="mx-1 text-dark botonpers" tabindex="0" aria-label="Añadir pantalón al carrito"><img src="./assets/carrito.svg" alt=""></button> 
+            </div>
+          </div>
+        <!-- Fin Stock Pantalones -->
+      </div>
+
+    </div>
+  </main>
+
+  <!--Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Autores: Lucas Pérez Rosario y Alejandro García Bautista (G14)</p></div>
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; CanaryClothes 2023</p></div>
+  </footer>
+  <!-- Final del Footer -->
+  
+  <!-- Scripts necesarios -->
+  <!-- BootStrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- Pluggin Isotope JS -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <!-- Js -->
+  <script src="./js/filtro.js"></script>
+  <!-- Final de los scripts necesarios -->
+</body>
+</html>
