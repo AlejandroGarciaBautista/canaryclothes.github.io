@@ -9,13 +9,13 @@ const objeto = JSON.parse(
         "id": 1,
         "producto": "Pantalón corto de hombre color azul",
         "precio": 50,
-        "imagen": "../img/Pantalon corto azul.jpg"
+        "imagen": "../img/Pantalon-corto-azul.jpg"
       }, 
       {
         "id": 2,
         "producto": "Camiseta de mujer color azul",
         "precio": 100,
-        "imagen": "../img/camisa mujer azul.jpg"
+        "imagen": "../img/camisa-mujer-azul.jpg"
       },
       {
         "id": 3,
